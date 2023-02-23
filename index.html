@@ -1,0 +1,217 @@
+
+              <!DOCTYPE html>
+              <html lang="ru">
+              
+              <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>zxc</title>
+                <style>
+                  *,
+                  *::before,
+                  *::after {
+                    box-sizing: border-box;
+                  }
+              
+                  body {
+                    margin: 0;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #212529;
+                    text-align: left;
+                    background: url(6anG.gif) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+                    
+                  }
+              
+                  .tabs {
+                    max-width: 350px;
+                    margin-left: auto;
+                    margin-right: auto;
+                  }
+              
+                  .tabs>input[type="radio"] {
+                    display: none;
+                  }
+              
+                  .tabs>input[type="radio"]:checked+label {
+                    background-color: #bdbdbd;
+                  }
+              
+                  .tabs>div {
+                    /* скрыть контент по умолчанию */
+                    display: none;
+                    border: 1px solid black;
+                    padding: 10px 15px;
+                    border-radius: 20px;
+
+                  }
+              
+                  /* отобразить контент связанный с вабранной радиокнопкой (input type="radio") */
+                  #tab-btn-1:checked~#content-1,
+                  #tab-btn-2:checked~#content-2,
+                  #tab-btn-3:checked~#content-3 {
+                    display: block;
+                  }
+              
+                  .tabs>label {
+                    display: inline-block;
+                    text-align: center;
+                    vertical-align: middle;
+                    user-select: none;
+                    background-color: #eee;
+                    border: 3px solid transparent;
+                    padding: 2px 8px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    border-radius: 4px;
+                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+                    margin-left: 6px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                  }
+              
+                  .tabs>label:first-of-type {
+                    margin-left: 0;
+                  }
+                  .content-1{
+                   background-color: aliceblue;
+                   text-decoration: none;
+                   
+                   
+                  }
+                  .content-2{
+                   background-color: aliceblue;
+                   text-decoration: none;
+                   color: black;
+                   
+                  
+                  }
+                  .con{
+                    text-decoration: none;
+                  }
+                  .con:hover{
+                  color: rgb(54, 54, 126);
+                  text-decoration: underline;
+                  }
+                  .content-3{
+                   background-color: aliceblue;
+                  
+                  }
+                  .levo{
+                  
+                    float: left;
+                    display: block;
+                    margin: 2px;
+                  }
+                  .pravo{
+                    float: left;
+                    display: block;
+                    margin: 2px;
+                  }
+                  .box{
+                    
+                    padding: 2px;
+                  }
+                  .nazv{
+                    font-size: 30px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                  }
+                  .mem{
+                   
+
+                  }
+                </style>
+              
+              </head>
+              
+              <body>
+              
+                <div class="tabs">
+                  <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                  <label for="tab-btn-1">о себе</label>
+                  <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                  <label for="tab-btn-2">ссылочки) </label>
+                  <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                  <label for="tab-btn-3">механика дота2</label>
+              
+                  <div class="content-1" id="content-1">
+                    жескткий дрейнер zxc absolute <br> мальчик играющий дота 2 и в ксго <br> постоянно в тильте из за проигрошей <br> слушаю курседа на репите каждый день (
+                        <img src="ima.jpg" alt="">
+                  </div>
+                  <div class="content-2" id="content-2">
+                    
+                    мои ссылочки: <br>
+                    <a class="con" href="https://vk.com/uz1ps">мой вк блин(</a> <br>
+                    <a  class="con" href="https://www.faceit.com/ru/players/Uz1ps">фейсит 2к узника(</a> <br>
+                    <a  class="con" href="https://www.youtube.com/channel/UCfGuTRhG0IeWZF6d41ku51g">конечно же ютубик)</a> <br>
+                    больше не дам... 
+                     <img src="eeeee.jpg" alt="">
+                
+                  </div>
+                  <div  class="content-3" id="content-3">
+                    <ul>
+                       <li>
+                           <div class="box">
+
+                               <div class="nazv">
+                                  механика номер 1
+                               </div>
+                              <div class="mem">
+                                если хускар настакает копья на тини будет ли считаться что он заварил гашиш?
+                              </div>
+
+                            </div>
+                       </li>
+                       <li>
+                        <div class="box">
+
+                            <div class="nazv">
+                               механика номер 2
+                            </div>
+                           <div class="mem">
+                            что будет если зевс ультанет в беременную? ей 2 раза ебанет молния по голове?
+                           </div>
+
+                         </div>
+                    </li>
+                    <li>
+                        <div class="box">
+
+                            <div class="nazv">
+                               механика номер 3
+                            </div>
+                           <div class="mem">
+                            если сайленсеру будут сосать член,а он нажмет глобал будет ли слышно как телка чавкает?
+                           </div>
+
+                         </div>
+                    </li>
+
+
+
+
+                     
+
+
+
+
+
+
+
+
+
+                    </ul>
+                  </div>
+                </div>
+              
+              </body>
+              
+              </html>
+                      
